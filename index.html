@@ -2,14 +2,313 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Shopno</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/0a399378d4.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="sass/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
     <link rel="stylesheet" href="sass/style.css">
 </head>
 <body>
+<header class="header">
+    <div class="container">
+        <div class="row">
+            <a class="logo col-9" href="#">
+                <img src="img/Logo.png">
+            </a>
+            <div class="nav col-3 justify-content-end">
+                <a class="nav-link" href="#">
+                    <i class="fas fa-bars nav-bars"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</header>
+<section class="hero">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 d-flex justify-content-center">
+                <div class="hero__header">
+                    <h1 class="hero__header__lines">say hello to <span class="hero__header__text">shopno!</span></h1>
+                    <h1 class="hero__header__lines"><span class="hero__header__text">agency</span> corporate shopno theme</h1>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 d-flex justify-content-center">
+                <div class="hero__button d-flex">
+                    <a href="#">contact us</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="about">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h1 class="about__header">about us</h1>
+                <h4 class="about__subheader">Lorem ipsum dolor sit amet event landing template</h4>
+            </div>
+            <div class="col-6 header__slider">
+                <div class="header__slider-background"></div>
+                <div class="header__slider__img">
+                    <div><img src="img/about-us.jpg" alt="about_us"></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <li class="header_slider__dots d-flex">
+                    <ul>.</ul>
+                    <ul>.</ul>
+                    <ul>.</ul>
+                </li>
+            </div>
+            <div class="col-6 header__text text-justify">
+                <h4 class="header__text__header">We Actually Do amazing works</h4>
+                <p class="header__text__lines">A visual approach is an approach to a runway at an airport
+                    conducted under instrument flight rules. The pilot must at all times have either
+                    the airport or the preceding aircraft in approach correct sight. conducted under
+                    instrument flight rules. The pilot must at all times.
+                </p>
+                <p class="header__text__lines">Preceding aircraft in approach correct sight. conducted under instrument flight rules.</p>
+                <h4 class="header__text__header">why we are the great?</h4>
+                <p class="header__text__lines">A visual approach is an approach to a runway at an airport
+                    conducted under instrument flight rules.
+                    The preceding aircraft in approach correct sight.</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="works">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h1 class="works__header">featured works</h1>
+                <h4 class="works__subheader">Lorem ipsum dolor sit amet event landing template</h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="works__blocks d-flex justify-content-around flex-wrap">
+                <div class=" col-4 works__block">
+                    <a href="#"><img class="works__block__img" src="img/work-block-1.jpg" alt="work_example"></a>
+                </div>
+                <div class=" col-4 works__block">
+                    <a href="#"><img class="works__block__img" src="img/work-block-2.jpg" alt="work_example"></a>
+                </div>
+                <div class=" col-4 works__block">
+                    <a href="#"><img class="works__block__img" src="img/work-block-3.jpg" alt="work_example"></a>
+                </div>
+                <div class=" col-4 works__block">
+                    <a href="#"><img class="works__block__img" src="img/work-block-4.jpg" alt="work_example"></a>
+                </div>
+                <div class=" col-4 works__block">
+                    <a href="#"><img class="works__block__img" src="img/work-block-5.jpg" alt="work_example"></a>
+                </div>
+                <div class=" col-4 works__block">
+                    <a href="#"><img class="works__block__img" src="img/work-block-6.jpg" alt="work_example"></a>
+                </div>
+            </div>
+         </div>
+    </div>
+</section>
+<section class="services">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h1 class="services__header">our services</h1>
+                <h4 class="services__subheader">Lorem ipsum dolor sit amet event landing template</h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="service__blocks d-flex justify-content-between">
+                <div class="service__block col-6">
+                    <img src="img/service-block-1.png" alt="service_example">
+                    <div class="service__block__text-long d-flex justify-content-center align-items-center">
+                        <div class="service__block__text__wrap">
+                            <h4 class="service__block__text__header">Designing is The CooL LOVE FOR.</h4>
+                            <p class="service__block__text__subheader">Our most popular service is our Virtual
+                                Receptionist. We know that ...</p>
+                            <a class="link" href="#"><div>Know More <i class="fas fa-arrow-right"></i></div></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="service__block col-5">
+                    <img src="img/service-block-2.png" alt="service_example">
+                    <div class="service__block__text-short d-flex justify-content-center align-items-center">
+                        <div class="service__block__text__wrap">
+                            <h4 class="service__block__text__header">cool psd Design</h4>
+                            <p class="service__block__text__subheader">We know that sometimes it’s something and
+                                you middle most..</p>
+                            <a class="link" href="#"><div>Know More <i class="fas fa-arrow-right"></i></div></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="service__blocks d-flex justify-content-between">
+                <div class="service__block col-5">
+                    <img src="img/service-block-2.png" alt="service_example">
+                    <div class="service__block__text-short d-flex justify-content-center align-items-center">
+                        <div class="service__block__text__wrap">
+                            <h4 class="service__block__text__header">cool psd Design</h4>
+                            <p class="service__block__text__subheader">We know that sometimes it’s something and
+                                you middle most..</p>
+                            <a class="link" href="#"><div>Know More <i class="fas fa-arrow-right"></i></div></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="service__block small-pic col-7">
+                    <img src="img/service-block-1.png" alt="service_example">
+                    <div class="service__block__text-long d-flex justify-content-center align-items-center">
+                        <div class="service__block__text__wrap">
+                            <h4 class="service__block__text__header">Designing is The Cool FOR</h4>
+                            <p class="service__block__text__subheader">Our most popular service is our Virtual
+                                Receptionist. We know that ...</p>
+                            <a class="link" href="#"><div>Know More <i class="fas fa-arrow-right"></i></div></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="team">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h1 class="team__header">our services</h1>
+                <h4 class="team__subheader">Lorem ipsum dolor sit amet event landing template</h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="team__blocks d-flex flex-wrap">
+                <div class="team__block col-4 d-flex justify-content-center align-items-center">
+                    <img src="img/team_1.png" alt="team_picture">
+                    <div class="team__block-text d-flex justify-content-center align-items-center">
+                        <div class="team__block-text__wrap">
+                            <h4>AL RAYHAN<span> / UI Designer</span></h4>
+                            <p>Lorem Ipsum is not simply is  an action designer random text
+                                It has roots in a piece. </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="team__block col-4 d-flex justify-content-center align-items-center">
+                    <img src="img/team_2.png" alt="team_picture">
+                    <div class="team__block-text d-flex justify-content-center align-items-center">
+                        <div class="team__block-text__wrap">
+                            <h4>AL RAYHAN<span> / UI Designer</span></h4>
+                            <p>Lorem Ipsum is not simply is  an action designer random text
+                                It has roots in a piece. </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="team__block col-4 d-flex justify-content-center align-items-center">
+                    <img src="img/team_3.png" alt="team_picture">
+                    <div class="team__block-text d-flex justify-content-center align-items-center">
+                        <div class="team__block-text__wrap">
+                            <h4>AL RAYHAN<span> / UI Designer</span></h4>
+                            <p>Lorem Ipsum is not simply is  an action designer random text
+                                It has roots in a piece. </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="team__block col-4 d-flex justify-content-center align-items-center">
+                    <img src="img/team_4.png" alt="team_picture">
+                    <div class="team__block-text d-flex justify-content-center align-items-center">
+                        <div class="team__block-text__wrap">
+                            <h4>AL RAYHAN<span> / UI Designer</span></h4>
+                            <p>Lorem Ipsum is not simply is  an action designer random text
+                                It has roots in a piece. </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="team__block col-4 d-flex justify-content-center align-items-center">
+                    <img src="img/team_5.png" alt="team_picture">
+                    <div class="team__block-text d-flex justify-content-center align-items-center">
+                        <div class="team__block-text__wrap">
+                            <h4>AL RAYHAN<span> / UI Designer</span></h4>
+                            <p>Lorem Ipsum is not simply is  an action designer random text
+                                It has roots in a piece. </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="team__block col-4 d-flex justify-content-center align-items-center">
+                    <img src="img/team_6.png" alt="team_picture">
+                    <div class="team__block-text d-flex justify-content-center align-items-center">
+                        <div class="team__block-text__wrap">
+                            <h4>AL RAYHAN<span> / UI Designer</span></h4>
+                            <p>Lorem Ipsum is not simply is  an action designer random text
+                                It has roots in a piece. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="clients">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h1 class="clients__header">our clients</h1>
+                <h4 class="clients__subheader">Lorem ipsum dolor sit amet event landing template</h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 clients__labels d-flex justify-content-center align-items-center">
+                <img src="img/clients.png" alt="clients_labels">
+            </div>
+        </div>
+        
 
+    </div>
+</section>
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="social-media-block col-12 text-center flex-wrap ">
+                <p>follow us</p>
+                <div class="d-flex justify-content-center">
+                    <div class="social-media__button d-flex justify-content-center align-items-center">
+                        <a class="social-media__button-link" href="#">
+                            <i class="fab fa-pinterest-p"></i>
+                        </a>
+                    </div>
+                    <div class="social-media__button d-flex justify-content-center align-items-center">
+                        <a class="social-media__button-link" href="#">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </div>
+                    <div class="social-media__button d-flex justify-content-center align-items-center">
+                        <a class="social-media__button-link" href="#">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </div>
+                    <div class="social-media__button d-flex justify-content-center align-items-center">
+                        <a class="social-media__button-link" href="#">
+                            <i class="fab fa-vk"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyrights-block col-12 text-center">
+                <p>Copyright Masum Parvej, All Rights Reserved</p>
+            </div>
+        </div>
+    </div>
+</footer>
 
 
 <script src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="slick/slick.min.js"></script>
+
+<script src="js/js.js" type="text/javascript"></script>
+
 </body>
 </html>
